@@ -1,0 +1,6 @@
+# The downloads repo publishes exactly ONE artifact: the release zip. Ignore
+# everything else under builds/ (e.g. locally-extracted test copies like
+# "Nova pasta/") so release.ps1's `git add -A` can never sweep loose files
+# into the single published commit.
+builds/*
+!builds/MinerDrone-Windows.zip
